@@ -503,24 +503,25 @@ Keep meta-information about your co-authors in `_data/coauthors.yml` and Jekyll 
 The co-author data format in `_data/coauthors.yml` is as follows,
 
 ```yaml
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Suresh K.":
+  - firstname: ["Suresh", "S. K.", "Suresh Krishna"]
+    url: https://www.linkedin.com/in/sureshka/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Sebastian S.":
+  - firstname: ["Sebastian", "S. S.", "Sebastian Scherer"]
+    url: https://theairlab.org/team/sebastian/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Micah C.":
+  - firstname: ["Micah", "M. C.", "Micah Corah"]
+    url: https://www.micahcorah.com/
 
-"Bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Jiaoyang L.":
+  - firstname: ["Jiaoyang", "J. L.", "Jiaoyang Li"]
+    url: https://jiaoyangli.me/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"S. Prabhu"
+- firstname: ["Prabhu Sethuramalingam", "S. P."]
+    url: https://www.srmist.edu.in/faculty/dr-s-prabhu/
 ```
 
 If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided.
