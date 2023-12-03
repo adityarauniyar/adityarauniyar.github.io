@@ -21,6 +21,8 @@ I'm interested in solving real-world problems using autonomy and AI.
 
 I'm currently pursuing my Master's in Robotics at the [Robotics Institute, Carnegie Mellon University](https://www.ri.cmu.edu/), where my research focuses on coordinating among autonomous agents with perceptual negotiation in the human world. These are especially important as autonomous agents like robots become widespread and integrated into our lives. With my work, I address the problems of robot awareness, safe planning in a human environment, and efficient coordination among agents to minimize redundancy.
 
+My research has been influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/), [Prof. Jiaoyan Li](https://jiaoyangli.me/), [Prof. Micah Corah](https://www.micahcorah.com/). 
+
 Send me an email for a chat! 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
