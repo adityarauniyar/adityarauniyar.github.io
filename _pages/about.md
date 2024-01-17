@@ -9,7 +9,7 @@ profile:
   image: adi.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Hi there!</p>
+    <p>Hi there! <br><img src="/assets/img/me_at_ABC.jpg" alt="Me at Mt. Annapurna Base" style="width:50%;"> <br><small>(Me at Mt. Annapurna Base)</small></p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
@@ -22,6 +22,8 @@ I'm interested in solving real-world problems using Robotics and AI.
 I'm currently pursuing my Master's in Robotics at the [Robotics Institute, Carnegie Mellon University](https://www.ri.cmu.edu/), where my research focuses on coordinating among autonomous agents with perceptual negotiation in the human world. These are especially important as autonomous agents like robots become widespread and integrated into our lives. With my work, I address the problems of robot awareness, safe planning in a human environment, and efficient coordination among agents to minimize redundancy.
 
 My research has been influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/), [Prof. Jiaoyang Li](https://jiaoyangli.me/), [Prof. Micah Corah](https://www.micahcorah.com/). 
+
+I enjoy playing soccer, cycling, and summiting mountains. 
 
 Send me an [email](mailto:rauniyar@cmu.edu) for a chat! 
 
