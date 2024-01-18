@@ -9,7 +9,7 @@ profile:
   image: adi.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Hi there! <br><img src="/assets/img/me_at_ABC.jpg" alt="Me at Mt. Annapurna Base" style="width:50%;"> <br><small>(Me at Mt. Annapurna Base)</small></p>
+    <p>Hi there! <br><img src="/assets/img/me_at_ABC.jpg" alt="Me at Mt. Annapurna Base" style="width:75%;"> <br><small>(Me at Mt. Annapurna Base)</small></p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
