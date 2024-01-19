@@ -9,7 +9,8 @@ related_publications:
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cWJ3KcwOSTA?si=Gh-br6Fo9ggAltQb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-I led the design, simulation and validation of the project. We achieved bronze medal in this competition.
+I led the design, simulation and validation of the project.
+We achieved a bronze medal in this competition.
 [Competition page](https://wro-association.org/) 
 
 
