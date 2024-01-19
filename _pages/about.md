@@ -29,9 +29,9 @@ Supporting Resources for PhD admissions:
 
 [⭐ Research Statement](/assets/pdf/Research_Statement.pdf)
 
-
 [⭐ Personal Statement](/assets/pdf/Personal_Statement.pdf)
 
+[⭐ Curriculum vitae](/assets/pdf/adityarauniyar.pdf)
 
 Send me an [email](mailto:rauniyar@cmu.edu) for a chat! 
 
