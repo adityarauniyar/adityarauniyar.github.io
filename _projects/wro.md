@@ -2,7 +2,7 @@
 layout: page
 title: "Mobile articulated arm for pick and place operation"
 description: 2DOF articulated arm on a three wheeled omni-directional platform with fully autonomous capability such to identify objects in the arena and perform a pick and place operation. 
-img: "assets/img/projects_thumbnail/wro.png"
+img: "assets/img/projects_thumbnail/wro_play.jpg"
 importance: 1
 category: autonomy
 related_publications:
