@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href=https://www.cmu.edu/>Carnegie Mellon University</a>. <a href=https://www.google.com/maps/place/Pittsburgh,+PA/@40.431251,-80.1456465,11z/data=!3m1!4b1!4m6!3m5!1s0x8834f16f48068503:0x8df915a15aa21b34!8m2!3d40.4406248!4d-79.9958864!16zL20vMDY4cDI?entry=ttu>Pittsburgh</a>. <br> (Seeking PhD position)
+subtitle: <a href=https://www.cmu.edu/>Carnegie Mellon University</a>. <a href=https://www.google.com/maps/place/Pittsburgh,+PA/@40.431251,-80.1456465,11z/data=!3m1!4b1!4m6!3m5!1s0x8834f16f48068503:0x8df915a15aa21b34!8m2!3d40.4406248!4d-79.9958864!16zL20vMDY4cDI?entry=ttu>Pittsburgh</a>.
 
 profile:
   align: right
