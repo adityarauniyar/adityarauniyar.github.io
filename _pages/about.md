@@ -21,7 +21,7 @@ I'm interested in solving real-world problems using Robotics and AI.
 
 I'm currently pursuing my Master's in Robotics at the [Robotics Institute, Carnegie Mellon University](https://www.ri.cmu.edu/), where my research focuses on coordinating among autonomous agents with perceptual negotiation in the human world. These are especially important as autonomous agents like robots become widespread and integrated into our lives. With my work, I address the problems of robot awareness, safe planning in a human environment, and efficient coordination among agents to minimize redundancy.
 
-My research has been influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/), [Prof. Jiaoyang Li](https://jiaoyangli.me/), [Prof. Micah Corah](https://www.micahcorah.com/). 
+My research has been influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/), [Prof. Katia Sycara](https://www.ri.cmu.edu/ri-faculty/katia-sycara/), [Prof. Micah Corah](https://www.micahcorah.com/). 
 
 I enjoy playing soccer, cycling, and summiting mountains. 
 
