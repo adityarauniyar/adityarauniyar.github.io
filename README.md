@@ -293,10 +293,6 @@ Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0
 4. Make changes, commit, and push!
 5. After deployment, the webpage will become available at `<your-github-username>.github.io`.
 
-Command to deploy with build 
-From the parent directory: 
-`bin/deploy --user`
-
 **For project pages:**
 
 1. In `_config.yml`, set `url` to `https://<your-github-username>.github.io` and `baseurl` to `/<your-repository-name>/`.
@@ -728,8 +724,3 @@ The theme is available as open source under the terms of the [MIT License](https
 
 Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license).
 Since then, it got a full re-write of the styles and many additional cool features.
-
-## Command to remotely deploy
-```
-bin/deploy --user
-```
