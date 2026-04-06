@@ -7,5 +7,5 @@ importance: 1
 category: perception/vision
 related_publications:
 ---
-## [Check out the project paper here!](../../assets/pdf/16825__Augmenting_large_scale_outdoor_datasets_for_Generalizable_Novel_View_Synthesis_.pdf)
+## [Check out the project website here!](https://aug3dim.github.io/)
 
