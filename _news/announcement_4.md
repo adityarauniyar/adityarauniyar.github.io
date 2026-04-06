@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Reviewing for <a href="https://iros2024-abudhabi.org/">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)</a>.
+Attended <a href="https://iros2024-abudhabi.org/">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)</a>.
