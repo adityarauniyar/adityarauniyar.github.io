@@ -23,7 +23,7 @@ I graduated with a Master's in Robotics from the [Robotics Institute, Carnegie M
 
 During my time at CMU, I led the Reidentification team for the [DARPA Triage Challenge](https://teamchiron.ai/) as part of Team Chiron, and co-developed [AirStack](https://docs.theairlab.org/main/docs/) — a modular autonomy stack for embodied AI.
 
-My research was influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/) and [Prof. Katia Sycara](https://www.cs.cmu.edu/~sycara/). 
+My research was influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/) (pioneer of field robotics) and [Prof. Katia Sycara](https://www.cs.cmu.edu/~sycara/) (pioneer of advanced agents). 
 
 Send me an [email](mailto:rauniyar@cmu.edu) for a chat! 
 
