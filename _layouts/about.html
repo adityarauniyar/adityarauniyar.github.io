@@ -49,6 +49,12 @@ layout: default
             {%- include news.html limit=true %}
           {%- endif %}
 
+          <!-- Events -->
+          <div id="events">
+            <h2 style="color: inherit;">events</h2>
+            {% include events.html %}
+          </div>
+
           <!-- Publications & Projects -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications & projects</a></h2>
@@ -65,15 +71,6 @@ layout: default
             </div>
             {% endif %}
           {%- endif %}
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Life Highlights -->
-          <!-- <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Life Highlights</a></h2> -->
           
 
           <!-- Social -->
