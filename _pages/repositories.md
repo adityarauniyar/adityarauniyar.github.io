@@ -3,7 +3,7 @@ layout: page
 permalink: /repositories/
 title: repositories
 description: Most of my codes are private, however, I have had a chance to open source some.
-nav: true
+nav: false
 nav_order: 3
 ---
 

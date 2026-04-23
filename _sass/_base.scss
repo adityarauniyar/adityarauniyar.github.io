@@ -4,6 +4,17 @@
 
 // Typography
 
+body {
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
 p,
 h1,
 h2,
@@ -37,10 +48,12 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: var(--global-theme-color);
-    text-decoration: underline;
+    color: var(--global-hover-color);
+    text-decoration: none;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -132,13 +145,25 @@ blockquote {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+
+  &.hoverable:hover {
+    border-color: var(--global-theme-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 
   img {
     width: 100%;
+    border-radius: 7px 7px 0 0;
   }
 
   .card-title {
     color: var(--global-text-color);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
   }
 
   .card-item {
@@ -165,13 +190,32 @@ blockquote {
   width: 100%;
 
   .more-info {
+    margin-top: 0.75rem;
     margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+    padding: 0.5rem 0.75rem;
+    border-left: 2px solid var(--global-theme-color);
+    background-color: rgba(0, 229, 255, 0.04);
+    border-radius: 0 4px 4px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--global-text-color-light);
+    letter-spacing: 0.03em;
 
     p {
-      display: inline-block;
+      display: block;
       margin: 0;
+    }
+  }
+}
+
+.profile {
+  img {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: var(--global-theme-color);
     }
   }
 }
@@ -210,14 +254,65 @@ blockquote {
   }
 }
 
+// Subtitle / role descriptor
+.desc {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  opacity: 0.9;
+  margin-top: 0.5rem;
+  line-height: 1.8;
+
+  a {
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+}
+
+// Post title sizing
+h1.post-title,
+.post-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+// Post header with accent line
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: var(--global-theme-color);
+  }
+}
+
 
 // Navbar customization
 
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: var(--global-navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar .dropdown-menu {
@@ -255,19 +350,33 @@ blockquote {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
   }
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    transition: color 0.2s ease;
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-theme-color);
     }
   }
 
   .navbar-nav .nav-item.active>.nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 700;
     color: var(--global-theme-color);
 
     &:hover {
@@ -283,7 +392,7 @@ blockquote {
     a {
       i::before {
         color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        transition: color 0.2s ease;
       }
 
       &:hover {
@@ -336,13 +445,16 @@ blockquote {
 }
 
 #light-toggle {
-  padding: 0;
-  border: 0;
+  padding: 4px 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
   background-color: inherit;
   color: var(--global-text-color);
+  transition: all 0.2s ease;
 
   &:hover {
-    color: var(--global-hover-color);
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
   }
 }
 
@@ -352,12 +464,12 @@ blockquote {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3.5rem;
 
     a {
       i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        color: var(--global-text-color-light);
+        transition: color 0.2s ease;
       }
 
       &:hover {
@@ -369,7 +481,9 @@ blockquote {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--global-text-color-light);
   }
 }
 
@@ -407,7 +521,10 @@ blockquote {
 // Footer
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.04em;
 
   .container {
     color: var(--global-footer-text-color);
@@ -417,6 +534,7 @@ footer.fixed-bottom {
 
   a {
     color: var(--global-footer-link-color);
+    transition: color 0.2s ease;
 
     &:hover {
       color: var(--global-theme-color);
@@ -613,12 +731,17 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-divider-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--global-theme-color);
     border-bottom: 1px solid var(--global-divider-color);
     padding-top: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    text-align: right;
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
   }
 }
 
@@ -676,6 +799,10 @@ footer.sticky-bottom {
           background-color: var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
+          border-radius: 3px;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 0.75rem;
+          letter-spacing: 0.05em;
 
           a {
             color: white;
@@ -725,17 +852,24 @@ footer.sticky-bottom {
 
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: var(--global-theme-color);
+          border: 1px solid var(--global-theme-color);
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          border-radius: 3px;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 0.72rem;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          transition: background-color 0.2s ease, color 0.2s ease;
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            background-color: var(--global-theme-color);
+            color: var(--global-bg-color);
+            text-decoration: none;
           }
         }
       }
@@ -806,8 +940,22 @@ figure.highlight {
 pre {
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
+  border: 1px solid var(--global-divider-color);
   border-radius: 6px;
-  padding: 6px 12px;
+  padding: 12px 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--global-theme-color), transparent);
+    border-radius: 6px 6px 0 0;
+  }
 
   pre,
   code {
@@ -815,14 +963,21 @@ pre {
     border-radius: 0;
     margin-bottom: 0;
     padding: 0;
+    border: none;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 code {
+  font-family: 'JetBrains Mono', monospace;
   color: var(--global-theme-color);
   background-color: var(--global-code-bg-color);
   border-radius: 3px;
-  padding: 3px 3px;
+  padding: 2px 5px;
+  font-size: 0.85em;
 }
 
 
@@ -1057,4 +1212,69 @@ nav[data-toggle="toc"] {
     margin-bottom: 0;
     padding-top: 0.5rem;
   }
+}
+
+// About page section headers (news, publications, posts)
+.post article > h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 60px;
+    height: 2px;
+    background: var(--global-theme-color);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// News table restyling
+.news {
+  .table {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+
+    th {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: var(--global-theme-color);
+      font-weight: 500;
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+
+    tr {
+      border-bottom: 1px solid var(--global-divider-color);
+      transition: background-color 0.15s ease;
+
+      &:hover {
+        background-color: rgba(0, 229, 255, 0.04);
+      }
+
+      td {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+      }
+    }
+  }
+}
+
+// Hero section wrapper
+.hero-section {
+  padding: 1.5rem 0 0.5rem;
 }

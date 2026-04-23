@@ -3,7 +3,7 @@
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
 
-// Colors
+// Colors (legacy — kept for compatibility with vendor styles)
 $red-color:           #FF3636 !default;
 $red-color-dark:      #B71C1C !default;
 $orange-color:        #F29105 !default;
@@ -30,10 +30,21 @@ $grey-900:            #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+// Sci-fi palette
+$neon-cyan:           #00E5FF;
+$neon-blue:           #2979FF;
+$space-navy:          #0A0F1E;
+$space-dark:          #0D1117;
+$space-panel:         #111827;
+$space-border:        #1F2937;
+$off-white:           #F0F4F8;
+$cool-grey-100:       #E2E8F0;
+$cool-grey-800:       #1E293B;
+
 // Theme colors
 
-$code-bg-color-light:     rgba($purple-color, 0.05);
-$code-bg-color-dark:      #2c3237 !default;
+$code-bg-color-light:     rgba($neon-cyan, 0.05);
+$code-bg-color-dark:      $space-dark;
 
 // Font awesome location
 $fa-font-path: "../webfonts";

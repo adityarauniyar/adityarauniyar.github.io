@@ -51,7 +51,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 960px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -121,7 +121,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Life Stories # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title:  # empty to hide from nav bar
 blog_description: What else is going on? 
 permalink: /blog/:year/:title/
 
@@ -204,8 +204,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - assets/jupyter
 keep_files:
-  - CNAME
   - .nojekyll
   - .git
 
