@@ -43,53 +43,20 @@
                 {% endif %}
               {% endfor %}
 
-              <!-- About -->
-              <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
-                  {%- if page.permalink == '/' -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
-              </li>
-              {% if site.blog_nav_title %}
-              <!-- Events (anchor link to home page section) -->
+              <!-- About (top of page) -->
               <li class="nav-item">
-                <a class="nav-link" href="{{ '/' | relative_url }}#events">{{ site.blog_nav_title }}</a>
+                <a class="nav-link" href="{{ '/' | relative_url }}">about</a>
               </li>
-              {%- endif %}
 
-              <!-- Other pages -->
-              {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
-              {%- for p in sorted_pages -%}
-              {%- if p.nav and p.autogen == nil -%}
-              {%- if p.dropdown %}
-              <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
-                  {%- if page.title == p.title -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  {%- for child in p.children -%}
-                  {%- if child.title == 'divider' %}
-                  <div class="dropdown-divider"></div>
-                  {%- else %}
-                  <a class="dropdown-item" href="{{ child.permalink | relative_url }}">{{ child.title }}</a>
-                  {%- endif -%}
-                  {% endfor %}
-                </div>
+              <!-- Work (scrolls to publications & projects tab) -->
+              <li class="nav-item">
+                <a class="nav-link" href="{{ '/' | relative_url }}#work-section" onclick="var t=document.getElementById('pub-tab');if(t){t.click();}">work</a>
               </li>
-              {%- else %}
-              <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
-                  {%- if page.title == p.title -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
+
+              <!-- Events (scrolls to section, activates events tab) -->
+              <li class="nav-item">
+                <a class="nav-link" href="{{ '/' | relative_url }}#work-section" onclick="var t=document.getElementById('events-tab');if(t){t.click();}">events</a>
               </li>
-              {%- endif -%}
-              {%- endif -%}
-              {% endfor -%}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

@@ -43,34 +43,72 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
+          <!-- Tabbed Section: Publications & Projects / Events -->
+          <div id="work-section">
+            <ul class="nav work-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pub-tab" data-toggle="tab" href="#publications-projects" role="tab" aria-controls="publications-projects" aria-selected="true">publications & projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">events</a>
+              </li>
+            </ul>
 
-          <!-- Events -->
-          <div id="events">
-            <h2 style="color: inherit;">events</h2>
-            {% include events.html %}
-          </div>
+            <div class="tab-content">
+              <!-- Publications & Projects Tab -->
+              <div class="tab-pane fade show active" id="publications-projects" role="tabpanel" aria-labelledby="pub-tab">
+                {% if page.selected_papers -%}
+                  {%- include selected_papers.html %}
 
-          <!-- Publications & Projects -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications & projects</a></h2>
-            {%- include selected_papers.html %}
+                  {%- assign sorted_projects = site.projects | sort: "importance" | where_exp: "p", "p.homepage != false" %}
+                  {% if sorted_projects.size > 0 %}
+                  <div class="publications">
+                    <ol class="bibliography">
+                      {%- for project in sorted_projects %}
+                      <li>
+                        <div class="row">
+                          {% if project.img %}
+                          <div class="col-sm-2 preview">
+                            <figure>
+                              <picture>
+                                <img src="{{ project.img | relative_url }}" class="preview z-depth-1 rounded" width="auto" height="auto" alt="{{ project.title }}">
+                              </picture>
+                            </figure>
+                          </div>
+                          {% endif %}
+                          <div class="{% if project.img %}col-sm-8{% else %}col-sm-10{% endif %}">
+                            <div class="title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></div>
+                            <div class="periodical">{{ project.description }}</div>
+                            {% if project.category %}
+                            <div class="periodical"><em>{{ project.category }}</em></div>
+                            {% endif %}
+                            <div class="links">
+                              {% if project.pdf %}
+                              <a href="{{ project.pdf | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+                              {% endif %}
+                              {% if project.github %}
+                              <a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+                              {% endif %}
+                              {% if project.website %}
+                              <a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      {%- endfor %}
+                    </ol>
+                  </div>
+                  {% endif %}
+                {%- endif %}
+              </div>
 
-            {%- assign sorted_projects = site.projects | sort: "importance" %}
-            {% if sorted_projects.size > 0 %}
-            <div class="projects">
-              <div class="grid">
-                {%- for project in sorted_projects -%}
-                  {% include projects.html %}
-                {%- endfor %}
+              <!-- Events Tab -->
+              <div class="tab-pane fade" id="events" role="tabpanel" aria-labelledby="events-tab">
+                {% include events.html %}
               </div>
             </div>
-            {% endif %}
-          {%- endif %}
+          </div>
           
 
           <!-- Social -->

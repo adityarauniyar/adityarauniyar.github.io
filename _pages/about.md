@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href=https://aurora.tech/>Aurora Innovation</a> · Simulation & Autonomy <br> MSR <a href=https://www.cmu.edu/>Carnegie Mellon University</a>
+subtitle: <a href=https://aurora.tech/>Aurora Innovation</a> · Simulation & Autonomy <br> Robotics @ <a href=https://www.cmu.edu/>Carnegie Mellon University</a>
 
 profile:
   align: right
   image: adi.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>// robotics · autonomy · self-driving</p>
+    <p>// Robotics · AI · Simulation</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
