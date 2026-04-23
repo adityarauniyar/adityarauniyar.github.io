@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participating in the <a href="https://triagechallenge.darpa.mil/">DARPA Triage Challenge</a> as part of <a href="https://teamchiron.ai/">Team Chiron</a>.
+Participating in the <a href="https://www.darpa.mil/research/challenges/darpa-triage-challenge">DARPA Triage Challenge</a> as part of <a href="https://teamchiron.ai/">Team Chiron</a>.

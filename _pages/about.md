@@ -21,7 +21,7 @@ I work at [Aurora Innovation](https://aurora.tech/) on simulation-driven autonom
 
 I graduated with a Master's in Robotics from the [Robotics Institute, Carnegie Mellon University](https://www.ri.cmu.edu/). My thesis, [Towards Views for 4D Scene Understanding](https://publications.ri.cmu.edu/vp4d-view-planning-for-3d-and-4d-scene-understanding), focused on coordinating among autonomous agents with perceptual negotiation in the human world.
 
-During my time at CMU, I led the Reidentification team for the [DARPA Triage Challenge](https://teamchiron.ai/) as part of Team Chiron, and co-developed [AirStack](https://docs.theairlab.org/main/docs/) — a modular autonomy stack for embodied AI.
+During my time at CMU, I led the Reidentification team for the [DARPA Triage Challenge](https://www.darpa.mil/research/challenges/darpa-triage-challenge) as part of [Team Chiron](https://teamchiron.ai/), and co-developed [AirStack](https://docs.theairlab.org/main/docs/) — a modular autonomy stack with closed-loop simulation for embodied AI.
 
 My research was influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/) (pioneer of field robotics) and [Prof. Katia Sycara](https://www.cs.cmu.edu/~sycara/) (pioneer of advanced agents). 
 

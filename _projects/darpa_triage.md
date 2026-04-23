@@ -12,4 +12,4 @@ related_publications:
 
 <a href="https://www.linkedin.com/posts/adi32_robotics-multirobotsystems-perception-activity-7414670933690527744-1PJF" target="_blank">Watch the multi-robot perception demo</a>
 
-Part of <a href="https://teamchiron.ai/" target="_blank">Team Chiron</a> for the <a href="https://triagechallenge.darpa.mil/" target="_blank">DARPA Triage Challenge</a>.
+Part of <a href="https://teamchiron.ai/" target="_blank">Team Chiron</a> for the <a href="https://www.darpa.mil/research/challenges/darpa-triage-challenge" target="_blank">DARPA Triage Challenge</a>.
