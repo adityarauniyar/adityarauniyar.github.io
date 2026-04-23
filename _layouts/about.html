@@ -57,49 +57,42 @@ layout: default
             <div class="tab-content">
               <!-- Publications & Projects Tab -->
               <div class="tab-pane fade show active" id="publications-projects" role="tabpanel" aria-labelledby="pub-tab">
-                {% if page.selected_papers -%}
-                  {%- include selected_papers.html %}
+                {%- assign sorted_projects = site.projects | where_exp: "p", "p.homepage != false" | sort: "year" | reverse %}
 
-                  {%- assign sorted_projects = site.projects | where_exp: "p", "p.homepage != false" | sort: "year" | reverse %}
-                  {% if sorted_projects.size > 0 %}
-                  <div class="publications">
-                    <ol class="bibliography">
-                      {%- for project in sorted_projects %}
-                      <li>
-                        <div class="row">
-                          {% if project.img %}
-                          <div class="col-sm-2 preview">
-                            <figure>
-                              <picture>
-                                <img src="{{ project.img | relative_url }}" class="preview z-depth-1 rounded" width="auto" height="auto" alt="{{ project.title }}">
-                              </picture>
-                            </figure>
-                          </div>
-                          {% endif %}
-                          <div class="{% if project.img %}col-sm-8{% else %}col-sm-10{% endif %}">
-                            <div class="title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></div>
-                            <div class="periodical">{{ project.description }}</div>
-                            {% if project.category %}
-                            <div class="periodical"><em>{{ project.category }}</em></div>
-                            {% endif %}
-                            <div class="links">
-                              {% if project.pdf %}
-                              <a href="{{ project.pdf | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-                              {% endif %}
-                              {% if project.github %}
-                              <a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">Code</a>
-                              {% endif %}
-                              {% if project.website %}
-                              <a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
-                              {% endif %}
-                            </div>
+                {% if sorted_projects.size > 0 %}
+                <div class="publications">
+                  <ol class="bibliography">
+                    {%- for project in sorted_projects %}
+                    <li>
+                      <div class="row">
+                        {% if project.img %}
+                        <div class="col-sm-2 preview">
+                          <figure>
+                            <picture>
+                              <img src="{{ project.img | relative_url }}" class="preview z-depth-1 rounded" width="auto" height="auto" alt="{{ project.title }}">
+                            </picture>
+                          </figure>
+                        </div>
+                        {% endif %}
+                        <div class="{% if project.img %}col-sm-8{% else %}col-sm-10{% endif %}">
+                          <div class="title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></div>
+                          <div class="periodical">{{ project.description }}</div>
+                          {% if project.year %}<div class="periodical"><em>{{ project.year }}</em></div>{% endif %}
+                          <div class="links">
+                            {% if project.pdf %}<a href="{{ project.pdf | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>{% endif %}
+                            {% if project.github %}<a href="{{ project.github }}" class="btn btn-sm z-depth-0" role="button">Code</a>{% endif %}
+                            {% if project.website %}<a href="{{ project.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>{% endif %}
                           </div>
                         </div>
-                      </li>
-                      {%- endfor %}
-                    </ol>
-                  </div>
-                  {% endif %}
+                      </div>
+                    </li>
+                    {%- endfor %}
+                  </ol>
+                </div>
+                {% endif %}
+
+                {% if page.selected_papers -%}
+                  {%- include selected_papers.html %}
                 {%- endif %}
               </div>
 
