@@ -17,13 +17,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I work at [Aurora Innovation](https://aurora.tech/) under Simulation and Autonomy, building the future of self-driving technology.
+I work at [Aurora Innovation](https://aurora.tech/) on simulation-driven autonomy, building the future of scalable deployment of autonomous systems.
 
-I graduated with a Master's in Robotics from the [Robotics Institute, Carnegie Mellon University](https://www.ri.cmu.edu/). My thesis, [Towards Views for 4D Scene Understanding](https://www.google.com/search?q=aditya+rauniyar+vp4d&oq=aditya+rauniyar+vp4d&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRigAdIBCDM4NzBqMGo5qAIFsAIB8QXHQW-eJ7UnJw&sourceid=chrome&ie=UTF-8), focused on coordinating among autonomous agents with perceptual negotiation in the human world.
+I graduated with a Master's in Robotics from the [Robotics Institute, Carnegie Mellon University](https://www.ri.cmu.edu/). My thesis, [Towards Views for 4D Scene Understanding](https://publications.ri.cmu.edu/vp4d-view-planning-for-3d-and-4d-scene-understanding), focused on coordinating among autonomous agents with perceptual negotiation in the human world.
 
-During my time at CMU, I led the Reidentification team for the [DARPA Triage Challenge](https://teamchiron.ai/) as part of Team Chiron, and co-developed [AirStack](https://docs.theairlab.org/main/docs/) — an autonomy software stack for aerial robots.
+During my time at CMU, I led the Reidentification team for the [DARPA Triage Challenge](https://teamchiron.ai/) as part of Team Chiron, and co-developed [AirStack](https://docs.theairlab.org/main/docs/) — a modular autonomy stack for embodied AI.
 
-My research was influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/), [Prof. Jiaoyang Li](https://jiaoyangli.me/), and [Prof. Micah Corah](https://www.micahcorah.com/). 
+My research was influenced by [Prof. Sebastian Scherer](https://theairlab.org/team/sebastian/) and [Prof. Katia Sycara](https://www.cs.cmu.edu/~sycara/). 
 
 Send me an [email](mailto:rauniyar@cmu.edu) for a chat! 
 
