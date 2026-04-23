@@ -5,6 +5,7 @@ description: 2DOF articulated arm on a three wheeled omni-directional platform w
 img: "assets/img/projects_thumbnail/wro_demo.gif"
 importance: 1
 category: autonomy
+year: 2018
 related_publications:
 ---
 

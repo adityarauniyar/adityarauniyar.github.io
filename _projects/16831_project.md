@@ -6,6 +6,7 @@ description: We use SARSA and Q-Learning to safely select viewpoints over a traj
 img: "assets/img/projects_thumbnail/16831_project.png"
 importance: 1
 category: autonomy
+year: 2023
 pdf: assets/pdf/16831__Project_report.pdf
 homepage: true
 related_publications:

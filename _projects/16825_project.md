@@ -5,6 +5,7 @@ description: Making existing pre-trained generalizable NVS models like PixelNeRF
 img: "assets/img/projects_thumbnail/16825_grouping_approaches.png"
 importance: 1
 category: perception/vision
+year: 2023
 related_publications:
 ---
 ## [Check out the project website here!](https://aug3dim.github.io/)

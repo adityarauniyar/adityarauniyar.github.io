@@ -5,6 +5,7 @@ description: Multi-robot system that collaboratively detects, tracks, and locali
 img: "assets/img/projects_thumbnail/dtc_demo.gif"
 importance: 0
 category: autonomy
+year: 2025
 related_publications:
 ---
 

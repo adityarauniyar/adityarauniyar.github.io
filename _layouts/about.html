@@ -60,7 +60,7 @@ layout: default
                 {% if page.selected_papers -%}
                   {%- include selected_papers.html %}
 
-                  {%- assign sorted_projects = site.projects | sort: "importance" | where_exp: "p", "p.homepage != false" %}
+                  {%- assign sorted_projects = site.projects | where_exp: "p", "p.homepage != false" | sort: "year" | reverse %}
                   {% if sorted_projects.size > 0 %}
                   <div class="publications">
                     <ol class="bibliography">
